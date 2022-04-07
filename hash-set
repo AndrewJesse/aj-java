@@ -1,0 +1,30 @@
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HasheBrowns{
+    public static void main(String[] args){
+        
+        HashSet<Integer> hashbrowns = new HashSet<Integer>();
+        hashbrowns.add(13);
+        hashbrowns.add(24);
+        hashbrowns.add(77);
+        hashbrowns.add(5);
+        hashbrowns.add(768);
+        hashbrowns.add(454);
+
+        Iterator<Integer> it = hashbrowns.iterator();
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
+    }
+
+}
+
+
+RETURNS.....
+768
+5
+454
+24
+13
+77
