@@ -1,0 +1,156 @@
+// Demonstration of repetition statements 
+
+    
+public class JavaRepetition
+{
+    public static void main(String[] args)
+    {
+           
+            //while loop
+         
+            int counter = 1;
+            while (counter < 5)
+            {
+                System.out.println(counter);
+                counter++;
+            }
+
+
+          
+            //do loop
+          
+            counter = 1;
+            do
+            {
+                System.out.println(counter);
+                counter++;
+            } while (counter < 5);
+
+
+            
+             //for loop
+          
+            for (counter = 1; counter < 5; counter++)
+            {
+                System.out.println(counter);
+            }
+
+          
+
+           
+            //for loop
+         
+            for (counter = 9; counter >0; counter--)
+            {
+                System.out.println(counter);
+            }
+
+
+
+          
+            //nested for loops
+         
+            int r, ct;
+            for (r = 1; r <= 3; r++)
+            {
+                for (ct = 1; ct <= 2; ct++)
+                {
+                    System.out.println("r = " + r + " ct= " + ct);
+                }
+            }
+
+
+            //nested while loop 
+         
+            System.out.println(""); 
+            System.out.println("nested while loop");
+            int outerloop = 0;
+            int innerloop = 0;
+
+            while (outerloop < 5)
+            {
+                innerloop = 0;
+                while (innerloop < 3)
+                {
+                    System.out.print("Outerloop = " + outerloop);
+                    System.out.println(" innerloop = " + innerloop);
+                    innerloop++;
+                }
+                outerloop++;
+            }
+
+
+
+        
+            //nested do loop 
+           
+            System.out.println(""); 
+            System.out.println("nested do loop");
+             outerloop = 0;
+             innerloop = 0;
+
+            do 
+            {
+                innerloop = 0;
+                do 
+                {
+                    System.out.print("Outerloop = " + outerloop);
+                    System.out.println(" innerloop = " + innerloop);
+                    innerloop++;
+                }
+                while (innerloop < 3);
+                outerloop++;
+            }
+            while (outerloop < 5);
+
+
+          
+            //nested for and while loops 
+            
+            System.out.println(""); 
+            System.out.println("nested for and while loops");
+            outerloop = 0;
+            innerloop = 0;
+
+            while (outerloop < 5)
+            {
+                
+                for (innerloop = 0; innerloop < 3; innerloop++)
+                {
+                    System.out.print("Outerloop = " + outerloop);
+                    System.out.println(" innerloop = " + innerloop);
+                }
+                outerloop++;
+            }
+
+
+           
+            //nested for and while loops 
+          
+            System.out.println(""); 
+            System.out.println("nested for and while loops");
+            outerloop = 0;
+            innerloop = 0;
+
+            for (outerloop = 0; outerloop < 5; outerloop++)
+            {
+                
+                while (innerloop  < 3)
+                {
+                    System.out.print("Outerloop = " + outerloop);
+                    System.out.println(" innerloop = " + innerloop);
+                    innerloop++;
+                }
+                innerloop = 0;
+            }
+            
+          
+            //infinite loop
+         
+            int counter = 1;
+            while (counter > 0)
+               System.out.println("hi");
+            
+
+    }
+}
